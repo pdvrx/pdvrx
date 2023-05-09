@@ -163,6 +163,9 @@ section{
     }
 
     .nav-list ul li a{
+        font-size: 0.7em;
+    }
+    .nav-list ul li a:hover{
         font-size: 0.8em;
     }
 }
