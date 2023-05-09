@@ -131,4 +131,19 @@ section{
     .main-name{
         font-size: 2em;
     }
+
+    .main-section h3{
+        font-size: 1em;
+    }
+
+    .nav-list ul{
+        margin-top: 4vh;
+        display: flex;
+        flex-direction: column;
+        gap:2vh;
+    }
+
+    .nav-list ul li a{
+        font-size: 0.8em;
+    }
 }
