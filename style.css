@@ -61,12 +61,19 @@ section{
 }
 
 .nav-list ul li a{
-    color: white;
+    color: whitesmoke;
     text-decoration: none;
-    letter-spacing: 7px;
+    letter-spacing: 5px;
     font-weight: bold;
-    text-align: center;
     overflow: hidden;
+    padding:30px;
+    border-radius: 50px;
+    font-size: 1em;
+    transition: all .2s ease-in-out;
+}
+
+.nav-list ul li a:hover{
+    font-size: 1.3em;
 }
 
 
@@ -80,19 +87,25 @@ section{
     display: flex;
     flex-direction: row;
     text-align: center;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     position: fixed;
     background-color: black;
-    padding: 2vh 0;
-    align-items: center;
+    height: 8vh;
     width: 100vw;
 }
-.nav-list{
-    
 
+@keyframes showBg{
+    from{
+        font-size: 1em;
+        text-decoration: none;
+    }
+
+    to{
+        font-size: 1.3em;
+        transform: translateX(100px);
+    }
 }
-
-
 
 @keyframes blink-cursor{
     from{
@@ -146,8 +159,7 @@ section{
 
     .nav-list ul{
         display: flex;
-        flex-direction: column;
-        gap:2vh;
+        flex-direction: row;
     }
 
     .nav-list ul li a{
