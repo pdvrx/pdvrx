@@ -61,3 +61,9 @@ section{
         width: 10em;
     }
 }
+
+@media screen and (max-width: 480px){
+    .main-name{
+        font-size: 2em;
+    }
+}
