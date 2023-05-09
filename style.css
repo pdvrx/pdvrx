@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+section{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.main-section{
+    background: 
+      radial-gradient(circle at 50% 50%, rgba(0,0,0,1), rgba(0,0,0,0.9)),
+      url(/👆/that/noise.svg);
+      filter: contrast(180%) brightness(100%);
+    
+}
+
+.typing-animation{
+    animation: blink-cursor 500ms steps(30) infinite normal,
+     typing 4s steps(30) 1s normal both;
+}
+
+.main-name{
+    font-size: 3em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,0.75);
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+@keyframes blink-cursor{
+    from{
+        border-right-color: rgba(255,255,255,0.75);
+    }
+
+    to{
+        border-right-color: transparent;
+    }
+}
+
+@keyframes typing{
+    from{
+       width: 0;
+    }
+
+    to{
+        width: 10em;
+    }
+}
