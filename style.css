@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 *{
     margin: 0;
@@ -19,16 +21,24 @@ section{
 }
 
 .main-section{
-    background: 
-      radial-gradient(circle at 50% 50%, rgba(0,0,0,1), rgba(0,0,0,0.9)),
-      url(/👆/that/noise.svg);
-      filter: contrast(180%) brightness(100%);
-    
+    background-color: black;    
+    display: flex;
+    flex-direction: column;
 }
 
 .typing-animation{
     animation: blink-cursor 500ms steps(30) infinite normal,
      typing 4s steps(30) 1s normal both;
+}
+
+.show-animation{
+    animation: typing2  2s normal both;
+    animation-delay: 5s;
+}
+
+.show-links-animation{
+    animation: typing3  2s normal both;
+    animation-delay: 6s;
 }
 
 .main-name{
@@ -41,6 +51,40 @@ section{
     cursor: pointer;
 }
 
+.main-section h3{
+    color: white;
+    margin-top: 3vh;
+    letter-spacing: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+
+.nav-list ul li a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 7px;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.nav-list ul li{
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+
+.nav-list ul{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+
 
 @keyframes blink-cursor{
     from{
@@ -49,6 +93,26 @@ section{
 
     to{
         border-right-color: transparent;
+    }
+}
+
+@keyframes typing3{
+    from{
+       width: 0;
+    }
+
+    to{
+        width: 14em;
+    }
+}
+
+@keyframes typing2{
+    from{
+       width: 0;
+    }
+
+    to{
+        width: 26em;
     }
 }
 
@@ -61,6 +125,7 @@ section{
         width: 10em;
     }
 }
+
 
 @media screen and (max-width: 480px){
     .main-name{
