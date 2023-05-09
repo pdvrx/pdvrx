@@ -1,7 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-html{
-    scroll-behavior: smooth;
+html,body{
+    scroll-behavior: smooth !important;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background-color: black;
+    border: 0px solid black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 50px;
+    border: 0px solid black;
 }
 
 *{
@@ -19,6 +31,23 @@ section{
     align-items: center;
     display: flex;
 }
+
+footer{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    padding: 10px;
+    color: rgb(66, 64, 64);
+    gap: 1vw;
+}
+
+.fa-brands{
+    color: rgb(66, 64, 64);
+}
+
 
 .main-section{
     background-color: black;    
@@ -95,6 +124,7 @@ section{
     width: 100vw;
 }
 
+
 @keyframes showBg{
     from{
         font-size: 1em;
@@ -167,5 +197,10 @@ section{
     }
     .nav-list ul li a:hover{
         font-size: 0.8em;
+    }
+
+    footer{
+        font-size: 0.7em;
+        gap: 2vw;
     }
 }
