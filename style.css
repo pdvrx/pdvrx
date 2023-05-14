@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 html,body{
     scroll-behavior: smooth !important;
@@ -20,16 +20,14 @@ html,body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
 
 }
 
 
 section{
     height: 100vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+
 }
 
 footer{
@@ -42,6 +40,7 @@ footer{
     padding: 10px;
     color: rgb(66, 64, 64);
     gap: 1vw;
+    font-size: 0.8em;
 }
 
 .fa-brands{
@@ -53,6 +52,9 @@ footer{
     background-color: black;    
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .typing-animation{
@@ -124,6 +126,45 @@ footer{
     width: 100vw;
 }
 
+.about-section{
+    padding: 0 5%;
+}
+
+.about-section h1{
+    padding-top: 15vh;
+    font-size: 4em;
+    letter-spacing: 8px;
+}
+
+.about-section p{
+    color: #514E4E;
+    font-size: 1.5em;
+    letter-spacing: 4px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 12vh;
+}
+
+.saber-mais{
+    padding-top: 15vh;
+    text-align: right;
+}
+
+.saber-mais h2{
+    font-size: 2.5em;
+    letter-spacing: 4px;
+}
+
+.saber-mais a{
+    text-decoration: none;
+    color: #514E4E;
+    letter-spacing: 4px;
+}
+
+.saber-mais a:hover{
+    font-size: 1.3em;
+    transition: all .2s ease-in-out;
+}
 
 @keyframes showBg{
     from{
