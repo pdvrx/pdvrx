@@ -244,4 +244,22 @@ footer{
         font-size: 0.7em;
         gap: 2vw;
     }
+
+    .about-section h1{
+        padding-top: 10vh;
+        font-size: 2em;
+    }
+
+    .about-section p{
+        font-size: 1em;
+        margin-top: 8vh;
+    }
+    
+    .saber-mais h2{
+        font-size: 1.5em;
+    }
+
+    .saber-mais{
+        padding-top: 8vh;
+    }
 }
