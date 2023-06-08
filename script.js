@@ -1,2 +1,2 @@
-var elementos = document.getElementsByClassName("main-name :nth-child(2)");
+var elementos = document.getElementsByClassName("img:nth-child(1)");
 console.log(elementos)

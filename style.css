@@ -26,7 +26,7 @@ html,body{
 
 
 section{
-    height: 100vh;
+    min-height: 100vh;
 
 }
 
@@ -142,7 +142,7 @@ footer{
     letter-spacing: 4px;
     text-align: center;
     margin: 0 auto;
-    margin-top: 12vh;
+    padding-top: 12vh;
 }
 
 .saber-mais{
@@ -164,6 +164,69 @@ footer{
 .saber-mais a:hover{
     font-size: 1.3em;
     transition: all .2s ease-in-out;
+}
+
+.portifolio-section{
+    padding: 0 5%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+}
+
+.portifolio-section h1{
+    padding-top: 15vh;
+    font-size: 3em;
+    letter-spacing: 8px;
+    color: white;
+
+}
+
+.projetos{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.projeto {
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.projeto img{
+    background-image: url("https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81qf2SAyPQhbEuvwyRoFulMRAiluZzJrCcMd4yt0_AzlP5jLb369MO7vqZrbFsArSFtTH2XB4zUed4l3EFjho1lcO1lE8g=w899-h625");
+    aspect-ratio: 1/1;
+    height: 200px;
+    background-size: cover;
+}
+
+.projeto .img{
+    background-image: url("https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81qMI5NQe8eirmSMSdOQrnJErIzbdp0AKF4aH2XQ75RUPLqgGwUJ-F0F9CpwTCri3xTz45oSkDK6fKVDjvI02pwk-WVoPw=w899-h625");
+    aspect-ratio: 1/1;
+    height: 200px;
+    background-size: cover;
+}
+
+.projeto:nth-child(6) .img {
+    background-image: url("https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81qf2SAyPQhbEuvwyRoFulMRAiluZzJrCcMd4yt0_AzlP5jLb369MO7vqZrbFsArSFtTH2XB4zUed4l3EFjho1lcO1lE8g=w899-h625");
+    aspect-ratio: 1/1;
+    height: 200px;
+    background-size: cover;
+}
+
+.projeto a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 5px;
+    font-style: italic;
 }
 
 @keyframes showBg{
@@ -214,7 +277,7 @@ footer{
     }
 
     to{
-        width: 10em;
+        width: 10.2em;
     }
 }
 
@@ -246,13 +309,14 @@ footer{
     }
 
     .about-section h1{
-        padding-top: 10vh;
+        padding-top: 15vh;
         font-size: 2em;
     }
 
     .about-section p{
-        font-size: 1em;
-        margin-top: 8vh;
+        font-size: 1.2em;
+        padding-top: 5vh;
+        text-align: center;
     }
     
     .saber-mais h2{
@@ -260,6 +324,29 @@ footer{
     }
 
     .saber-mais{
-        padding-top: 8vh;
+        padding-top: 10vh;
+    }
+
+    .projetos{
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .portifolio-section h1{
+        padding-top: 10vh;
+        font-size: 2em;
+        text-align: center;
+        letter-spacing: 8px;
+        color: white;
+    
+    }
+
+    .projetos{
+        flex-direction: column;
+    }
+
+    .projeto:nth-child(7) {
+        margin-bottom: 10vw;
     }
 }
