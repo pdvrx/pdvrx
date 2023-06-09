@@ -228,6 +228,51 @@ footer{
     letter-spacing: 5px;
     font-style: italic;
 }
+.projeto:nth-child(6){
+    padding-bottom: 8vh;
+}
+
+.projeto:nth-child(7){
+    padding-bottom: 8vh;
+}
+
+.projeto:nth-child(8){
+    padding-bottom: 8vh;
+}
+
+.contact-section{
+    padding: 0 5%;
+}
+
+.contact-section h1{
+    padding-top: 15vh;
+    font-size: 4em;
+    letter-spacing: 8px;
+    text-align: left;
+    border-bottom: 2px solid;
+    padding-bottom: 2vh;
+}
+
+.contact-section p{
+    font-size: 1.5em;
+    text-align: left;
+    max-width: 60%;
+    padding-top: 2vh;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.textos-contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#icon-contact{
+    color: #000;
+    font-size: 1.3em;
+}
 
 @keyframes showBg{
     from{
