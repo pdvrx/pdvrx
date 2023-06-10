@@ -148,6 +148,7 @@ footer{
 .saber-mais{
     padding-top: 15vh;
     text-align: right;
+    border-bottom: solid black 2px;
 }
 
 .saber-mais h2{
@@ -249,8 +250,6 @@ footer{
     font-size: 4em;
     letter-spacing: 8px;
     text-align: left;
-    border-bottom: 2px solid;
-    padding-bottom: 2vh;
 }
 
 .contact-section p{
@@ -262,16 +261,26 @@ footer{
     letter-spacing: 2px;
 }
 
-.textos-contacts{
-    display: flex;
-    flex-direction: column;
+.links-contacts{
     align-items: center;
     justify-content: center;
+    display: flex;
+    gap:2vw;
 }
 
-#icon-contact{
-    color: #000;
-    font-size: 1.3em;
+.contact-section a{
+    text-decoration: none;
+    color: #514E4E;
+    letter-spacing: 4px;
+    padding-bottom: 2vh;
+
+}
+
+.contact-section div{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-bottom: black 2px solid;
 }
 
 @keyframes showBg{
