@@ -363,7 +363,7 @@ footer{
     }
 
     .about-section h1{
-        padding-top: 15vh;
+        padding-top: 10vh;
         font-size: 2em;
     }
 
@@ -400,7 +400,61 @@ footer{
         flex-direction: column;
     }
 
+    .projeto:nth-child(6) {
+        padding-bottom: 4vw;
+    }
+
     .projeto:nth-child(7) {
-        margin-bottom: 10vw;
+        padding-bottom: 4vw;
+    }
+
+    .projeto:nth-child(8) {
+        padding-bottom: 10vw;
+    }
+
+    .contact-section{
+        padding: 0 5%;
+    }
+    
+    .contact-section h1{
+        padding-top: 15vh;
+        font-size: 2em;
+        letter-spacing: 8px;
+        text-align: left;
+    }
+    
+    .contact-section p{
+        font-size: 1.5em;
+        text-align: left;
+        max-width: 60%;
+        padding-top: 2vh;
+        font-style: italic;
+        letter-spacing: 2px;
+    }
+    
+    .links-contacts{
+        align-items: left;
+        justify-content: center;
+        display: flex;
+        gap:2vw;
+        max-width: 100%;
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .contact-section a{
+        text-decoration: none;
+        color: #514E4E;
+        letter-spacing: 4px;
+        padding-bottom: 2vh;
+    
+    }
+    
+    .contact-section div{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        border-bottom: black 2px solid;
+        flex-direction: column;
     }
 }
