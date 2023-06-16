@@ -467,4 +467,9 @@ footer{
         border-bottom: black 2px solid;
         flex-direction: column;
     }
+
+    .contact-section a:hover{
+        transform: scaleY(1);
+        transition: all .0s ease-in-out;
+    }
 }
